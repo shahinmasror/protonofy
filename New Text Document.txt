@@ -4,3 +4,32 @@ It must be derived from System.Web.Http.ApiController class.
 It can be created under any folder in the project's root folder. However, it is recommended to create controller classes in the Controllers folder as per the convention.
 Action method name can be the same as HTTP verb name or it can start with HTTP verb with any suffix (case in-sensitive) or you can apply Http verb attributes to method.
 Return type of an action method can be any primitive or complex type. Learn more about it
+
+The following table lists possible action method names for each HTTP method:
+
+HTTP Method	Possible Web API Action Method Name	Usage
+GET	Get()
+get()
+GET()
+GetAllStudent()
+*any name starting with Get *	Retrieves data.
+POST	Post()
+post()
+POST()
+PostNewStudent()
+*any name starting with Post*	Inserts new record.
+PUT	Put()
+put()
+PUT()
+PutStudent()
+*any name starting with Put*	Updates existing record.
+PATCH	Patch()
+patch()
+PATCH()
+PatchStudent()
+*any name starting with Patch*	Updates record partially.
+DELETE	Delete()
+delete()
+DELETE()
+DeleteStudent()
+*any name starting with Delete*	Deletes re
